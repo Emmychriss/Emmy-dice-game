@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Press Start 2P", cursive;
+  width: 50%;
+  margin: auto;
+  font-size: 14px;
+  background-color: #7075db;
+  color: white;
+}
+header {
+  margin-top: 10px;
+  padding: 5px;
+  text-align: center;
+}
+.playGuideDiv {
+  float: right;
+  margin-top: 10px;
+  margin-right: 15%;
+}
+.playGuideDropdown {
+  width: 20%;
+  float: right;
+}
+.bigDiv {
+  margin-top: 10%;
+  border: 3px solid whitesmoke;
+  background: linear-gradient(#232464, #7882f1);
+  box-shadow: 0 5px rgba(93, 64, 55, 0.4), 0 10px rgba(34, 39, 54, 0.3),
+    0 15px rgba(93, 64, 55, 0.2), 0 20px rgba(93, 64, 55, 0.1),
+    0 25px rgba(93, 64, 55, 0.05), -5px 5px 40px rgba(100, 0, 0, 0.4);
+  /* border-top: 5px sollid black; */
+  /* border-bottom: 5px sollid black; */
+}
+.firstPlayer {
+  /* width: 40%; */
+  margin-top: 15px;
+  height: 50vh;
+  /* border-bottom: 5px; */
+}
+.buttons {
+  position: relative;
+}
+.btn {
+  border-radius: 20px;
+  opacity: 1;
+  -webkit-animation: bounce 2s infinite alternate;
+  -moz-animation: bounce 3s infinite alternate;
+  animation: bounce 3s infinite alternate;
+}
+@-webkit-keyframes bounce {
+  to {
+    -webkit-transform: scale(1.2);
+  }
+}
+@-moz-keyframes bounce {
+  to {
+    -moz-transform: scale(1.2);
+  }
+}
+@keyframes bounce {
+  to {
+    transform: scale(1.2);
+  }
+}
+.btn:hover {
+  background-color: #c87633;
+  font-size: 15px;
+}
+.rollDice {
+  position: absolute;
+  padding: 15px;
+  top: -160px;
+  left: 45%;
+}
+.holdScore {
+  position: absolute;
+  padding: 15px;
+  top: -97px;
+  left: 45%;
+}
+.newGame {
+  position: absolute;
+  padding: 15px;
+  left: 45%;
+  top: -35px;
+}
+.playerScoreDetails {
+  width: 35%;
+  margin-top: 3%;
+  margin-left: 5%;
+}
+.player1-style {
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+}
+.currentScore {
+  padding: 20px;
+  font-size: 14px;
+}
+.totalScore {
+  padding: 20px;
+  font-size: 14px;
+}
+.buttons {
+  /* vertical-align: top; */
+}
+.diceRollSpan {
+  position: absolute;
+  top: 54.5%;
+  right: 48%;
+}
+.diceImageDiv {
+  position: absolute;
+  top: 51.5%;
+  left: 55%;
+  border: 5px orangered;
+}
+
+.diceImage {
+  margin: 3%;
+}
+.secondPlayer {
+  /* width: 40%; */
+  /* border-top: 5px; */
+
+  margin-top: 15px;
+  height: 50vh;
+}
+.player2 {
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+}
+/* .rollDice2 {
+  position: absolute;
+  padding: 15px;
+  top: -220px;
+  left: 45%;
+}
+.holdScore2 {
+  position: absolute;
+  padding: 15px;
+  top: -160px;
+  left: 45%;
+}
+.newGame2 {
+  position: absolute;
+  padding: 15px;
+  left: 45%;
+  top: -100px;
+} */
+
+.activePlayer {
+  background-color: #cccbf5;
+  color: black;
+  border-radius: 15px;
+}
+.hidden {
+  display: none;
+}
+.playerWinner {
+  background-color: #c87633;
+  color: black;
+  border-radius: 15px;
+}

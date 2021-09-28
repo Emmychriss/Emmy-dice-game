@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice quest</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Welcome to Emmy's Dice quest</h2>
+      <div class="playGuideDiv">
+        <p class="playGuideText">Play guide:</p>
+        <!-- <div class="playGuideDropdown">
+          <p>
+            Two players are to roll a dice each, reaching a specified maximum of
+            <b> 100 total points</b> determines the winner . However, if a dice
+            roll of 1 is obtained by any of the players, the current player is
+            switched to the other player.
+          </p>
+          <p>
+            At any point in the game, any player can decide to hold current
+            score as a game strategy to avoid throwing 1.
+          </p>
+          <p>
+            You can use the new game reset button to have a fresh start of the
+            game from beginning.
+          </p>
+          <p>...play wisely!👍</p>
+        </div> -->
+      </div>
+    </header>
+    <div class="bigDiv">
+      <section class="firstPlayer">
+        <div class="playerScoreDetails player0 activePlayer">
+          <p class="player0 player1-style">PLAYER 1</p>
+          <p class="currentScore">
+            Current score: <span class="currentNum0El">0</span>
+          </p>
+          <p class="totalScore">
+            Total score: <span class="total0Num">0</span>
+          </p>
+        </div>
+        <div class="buttons">
+          <button class="btn rollDice">Roll Dice</button>
+          <button class="btn holdScore">Hold Score</button>
+          <button class="btn newGame">New Game</button>
+        </div>
+      </section>
+      <span class="diceRollSpan">Dice Roll</span>
+      <div class="diceImageDiv">
+        <img
+          src="images/dice1.png"
+          alt="dice image"
+          class="diceImage"
+          width="80"
+          height="80"
+        />
+      </div>
+      <section class="secondPlayer">
+        <div class="playerScoreDetails player1">
+          <p class="player2">PLAYER 2</p>
+          <p class="currentScore">
+            Current score: <span class="currentNum1El">0</span>
+          </p>
+          <p class="totalScore">
+            Total score: <span class="total1Num">0</span>
+          </p>
+        </div>
+        <div class="buttons">
+          <button class="btn rollDice">Roll Dice</button>
+          <button class="btn holdScore">Hold Score</button>
+          <button class="btn newGame">New Game</button>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
